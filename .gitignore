@@ -1,0 +1,14 @@
+# Telegram session — contains your auth token, never commit this
+session.txt
+
+# Upload progress log — machine-specific, regenerate if needed
+uploaded.json
+
+# Temp video parts created during splitting
+temp_parts/
+
+# Environment variables — contains API keys and chat IDs
+.env
+
+# Node modules
+node_modules/
