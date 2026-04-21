@@ -1,0 +1,6 @@
+node -e "
+const data = JSON.parse(require('fs').readFileSync('uploaded.json'));
+const total = Object.values(data).reduce((sum, v) => sum + (v.size || 0), 0);
+console.log('Total uploaded:', (total / 1024**3).toFixed(2), 'GB');
+console.log('Files/parts:', Object.keys(data).length);
+"
